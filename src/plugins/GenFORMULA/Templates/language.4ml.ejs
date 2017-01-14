@@ -29,26 +29,26 @@ function getXsdTypeOfAttribute(attributeDescriptor) {
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix this: <http://127.0.0.1:8228/?project=guest#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix webgme: <https://github.com/webgme/webgme> .
+@prefix webgme: <https://github.com/webgme/webgme#> .
 <%
 for(path = 0; path < order.length; path += 1) {
     //node definition
     baseName = convertName(nodes[order[path]].name);
     hasSets = nodes[order[path]].setNames.length > 0;
 %>
-// <%= baseName %> class definition
+# <%= baseName %> class definition
 this:<%= baseName %> rdf:type rdfs:Class .
 <% for (i = 0; i < nodes[order[path]].subTypes.length; i += 1) {
     if (nodes[nodes[order[path]].subTypes[i]].name != baseName ) {
 %>this:<%= nodes[nodes[order[path]].subTypes[i]].name %> rdfs:subClassOf this:<%=nodes[order[path]].name %> .
 <%}}%>
-// <%= baseName %> property definitions
+# <%= baseName %> property definitions
 <% for (i = 0; i < nodes[order[path]].attributeNames.length; i+= 1) {
 %>this:<%= baseName %>__<%= nodes[order[path]].attributeNames[i] %> rdf:type rdf:property .
 this:<%= baseName %>__<%= nodes[order[path]].attributeNames[i] %> rdf:domain this:<%= baseName %> .
 this:<%= baseName %>__<%= nodes[order[path]].attributeNames[i] %> rdf:range xsd:<%= getXsdTypeOfAttribute(nodes[order[path]].meta.attributes[nodes[order[path]].attributeNames[i]]) %> .
 <% } %>
-// <%= baseName %> - end
+# <%= baseName %> - end
 
 <%
 }

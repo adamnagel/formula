@@ -1,3 +1,12 @@
+# RDF integration framework for WebGME
+Forked from Tamas Kecskes's FORMULA integration.
+Very much in-progress, incomplete, and likely incorrect.
+
+Thus far, only the template files have been changed in order to generate
+TTL-formatted RDF data from the metamodel and model.
+
+---------------------
+
 # Formula integration framework for WebGME
 ## More information
 [Formula](http://formula.codeplex.com/)

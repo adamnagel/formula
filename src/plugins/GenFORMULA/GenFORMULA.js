@@ -13,9 +13,9 @@ define([
     'plugin/PluginBase',
     'plugin/PluginMessage',
     'common/util/ejs',
-    'text!./Templates/language.4ml.ejs',
-    'text!./Templates/node.4ml.ejs',
-    'text!./Templates/project.4ml.ejs',
+    'text!./Templates/language.ttl.ejs',
+    'text!./Templates/node.ttl.ejs',
+    'text!./Templates/project.ttl.ejs',
     './utils'
 ], function (PluginConfig,
              pluginMetadata,

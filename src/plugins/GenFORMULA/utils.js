@@ -5,7 +5,7 @@
 /*jshint node:true, browser:true*/
 define([
     'common/util/ejs',
-    'text!./Templates/language.4ml.ejs'
+    'text!./Templates/language.ttl.ejs'
 ], function (ejs, languageTemplate) {
 
     function getSubTypesOfNode(client, languageNodes, node) {

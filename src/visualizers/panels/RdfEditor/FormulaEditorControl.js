@@ -36,7 +36,7 @@ define(['js/Constants',
 
         this._initWidgetEventHandlers();
 
-        // this._widget.setTitle('FormulaEditor');
+        // this._widget.setTitle('RdfEditor');
 
         this._result = {state: null, projectId: null, commitHash: null, result: null};
 

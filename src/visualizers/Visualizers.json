@@ -1,8 +1,8 @@
 [
   {
     "id": "FormulaEditor",
-    "title": "FormulaEditor",
-    "panel": "panels/FormulaEditor/FormulaEditorPanel",
+    "title": "RDFEditor",
+    "panel": "panels/RdfEditor/FormulaEditorPanel",
     "DEBUG_ONLY": false
   }
 ]

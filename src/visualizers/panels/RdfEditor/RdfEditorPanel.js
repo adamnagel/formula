@@ -7,7 +7,7 @@
 define(['js/PanelBase/PanelBaseWithHeader',
     'js/PanelManager/IActivePanel',
     'widgets/FormulaEditor/FormulaEditorWidget',
-    './FormulaEditorControl'
+    './RdfEditorControl'
 ], function (PanelBaseWithHeader,
              IActivePanel,
              FormulaEditorWidget,
